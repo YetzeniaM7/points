@@ -1,6 +1,6 @@
 var express = require ('express');
 var router = express.Router();
-var EspacioController = require('../Controllers/espacio.c');
+var EspacioController = require('../controllers/espacio.c');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
