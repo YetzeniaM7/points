@@ -8,6 +8,9 @@ var indexRouter = require('./routes/index');
 var equipoRouter = require('./routes/equipo');
 var TrabajoRouter = require('./routes/Trabajo');
 var ReservaRouter = require('./routes/Reserva');
+var personalrouter = require('./routes/personal)
+var solicirouter = require('./routes/solicitante)
+
 var app = express();
 
 // view engine setup
@@ -27,6 +30,9 @@ app.use('/Trabajo', TrabajoRouter
 );
 app.use('/Reserva', ReservaRouter
 );
+app.use('/personal', personalrouter);
+app.use('/solicitante', soliciRouter);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
