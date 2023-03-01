@@ -1,6 +1,6 @@
 var express = require('express')
 var router = express.Router()
-var personalController = require ('../Controllers/personal.c');
+var personalController = require ('../controllers/personal.c');
 
 
 router.get('/', function(req, res, next) { 
